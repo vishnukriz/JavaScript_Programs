@@ -1,0 +1,10 @@
+Step 1: install Node.js
+Step 2: install VScode
+Step 3: Create a folder in File Manager
+Step 4: Open the folder which created in FileManager at VS code editor
+Step 5: Open Terminal: 
+          enter node-v => To verify node is installed
+Step 6: Things to do in Terminal:
+  npm init - Package.json will be available
+  npm install cypress --save -dev  - cypress get installed and node_modules will be available
+  npx cypress open - (Do the steps) - cypress folder will be available
