@@ -1,2 +1,16 @@
-Open Git Bash in the required folder and enter the commands:
+Open Git Bash in the required(newly created or existing) folder and enter the commands:
+--- if it new, first use command git init (.git file will be visible)
+
+git init - initilize the empty git repository
+
 1) touch test.txt  => Create a new file 
+2) rm test.txt     => Delete a file
+3) mkdir Notes     => Create a new folder
+4) rmdir Notes     => Delete a folder
+5) ls              => To display the files and folder available 
+6) cat test.txt    => display content inside the file
+7) vi test.txt  
+      enter i (insert)
+      Type a text
+      click esc & :wq (write & quit)   => To type a text inside the file
+8) clear           => Clear the git bash 
