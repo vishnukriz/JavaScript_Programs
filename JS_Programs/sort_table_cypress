@@ -1,0 +1,17 @@
+
+// let data=[ "Australia", "Belgium","China", "Denmark"]; //Tester Data
+
+Cy.get("table").find("tr").each(arr,i=>{
+    Cy.get("table").find("tr").eq(i).find("td").eq(0).then(t)
+arr.push(t.text())  // table data pushed to a
+}).then(arr=>{
+    arr.sort() // sorting tester data
+    cy.get("sortbutton").click() // clicking sorting button
+    arr.forEach(elem,i=>{
+        Cy.get("table").find("tr").eq(i).find("td").eq(0).should("have.text",elem) // checking each td with sorted data
+    })
+})
+
+// arr=["China", "Australia", "Denmark", "Belgium"]
+
+

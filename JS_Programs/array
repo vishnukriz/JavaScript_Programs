@@ -1,0 +1,49 @@
+const employees = [
+  { id: 101, name: "Sakshi Memon", email: "sakshi.memon@email.com" },
+  { id: 102, name: "Subhash Shukla", email: "subhash.shukla@email.com" },
+  { id: 103, name: "Mohini Karpe", email: "mohini.karpe@email.com" }
+];
+
+let obj = employees[0];
+console.log(obj);
+console.log(obj.name)
+
+const nos = [1,2,3,4,5,6];
+
+const emp = { id: 101, name: "Sakshi Memon", email: "sakshi.memon@email.com" };
+
+console.log("for of - arr" )
+for(let val of nos){
+    console.log(val)
+}
+
+//console.log("for of - obj" ) //TypeError: emp is not iterable
+//for(let val of emp){
+//    console.log(val)
+//}
+console.log("for in - arr" )
+for(let idx in nos){
+//    console.log(idx)
+}
+
+console.log("for in - arr val" )
+for(let idx in nos){
+//    console.log(nos[idx])
+}
+console.log("for in - obj" )
+for(let key in emp){
+//    console.log(emp[key]);
+    
+}
+
+console.log(emp.id);
+console.log(emp["id"]);
+
+let id = "id";
+
+console.log(emp[id]);
+
+//emp.id = 101
+//emp[id]
+
+
