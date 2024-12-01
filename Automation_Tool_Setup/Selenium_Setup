@@ -1,0 +1,16 @@
+Step 1: Open Eclipse IDE:  Launch Eclipse IDE.
+Step 2: Create a New Maven Project: Go to File -> New -> Project. Select Maven -> Maven Project and click Next.
+Step 3: Select Maven Archetype:
+a. Choose org.apache.maven.archetypes:maven-archetype-quickstart and click Next.
+b. Configure Maven Project:
+    i. Fill in the required fields such as Group Id and Artifact Id.
+    ii. Optionally, you can provide a version and a package name.
+    iii. Click Finish.
+Step 4: Add Selenium WebDriver Dependency:
+   1. Once the Maven project is created, open the pom.xml file.
+   2. Add the Selenium WebDriver and TestNG dependency within the section
+Step 5: Implement Cross-Browser Test: Create a new Java class under src/test/java for cross-browser test
+Step 6: Configure TestNG
+  To configure testng.xml, Right click on Project→TestNG→ Convert to Testng
+Step 7: Run Test
+  Right-click on testng.xml, go to Run As -> TestNG Suite.
