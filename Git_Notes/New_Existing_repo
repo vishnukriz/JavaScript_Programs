@@ -1,3 +1,5 @@
+****Existing repo to local repo****
+
 Step 1: git - open the repository
 Step 2: PC - create a new folder
 Step 3: open the folder
@@ -14,4 +16,5 @@ Step 9: Git commands:
    * git add . - to stage all the changed files
    * git commit -m <message> - commit the staged files with descriptive message
    * git push  - push to git repo / the changed files in local repo, will now be visible in Git repo
+ 
  
