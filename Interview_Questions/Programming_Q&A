@@ -1,1 +1,53 @@
+1) declare an array and find 3rd largest number in an array. arr = [56, 3, 98, 5, 66]
+2) Find Experience (in yrs) > 3
+let a=[
+    {
+        "name": "Employee1",
+        "Employer": "AclDigital",
+        "Experience (in yrs)": 2
+    },
+    {
+        "name": "Employee2",
+        "Employer": "AclDigital",
+        "Experience (in yrs)": 3
+    },
+    {
+        "name": "Employee3",
+        "Employer": "Siemens",
+        "Experience (in yrs)": 6
+    },
+    {
+        "name": "Employee4",
+        "Employer": "Siemens",
+        "Experience (in yrs)": 3
+    },
+    {
+        "name": "Employee5",
+        "Employer": "Siemens",
+        "Experience (in yrs)": 4
+    },
+    {
+        "name": "Employee6",
+        "Employer": "Siemens",
+        "Experience (in yrs)": 2
+    }
+]
+
+3) Find the index of 6:   a = [4,5,6,8]
+4) square root / perfectSquare
+5) duplicate number (1000) in arr
+6) **Reverse String** 
+   //"vardhini Vishnu is name My"  
+   //"yM eman si unhsiV inihsraV"  
+   //"inihsraV unhsiV si eman yM"
+
+7) **duplicate number**  
+    //print array without duplicates
+    // print array only duplicates
+
+8) Merge 2 Array and sort it
+9) Print array without duplicate and sort it
+10) Sum of number in a array
+11) Prime number
+12) Function decalration & function expression
 
