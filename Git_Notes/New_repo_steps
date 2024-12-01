@@ -1,0 +1,12 @@
+**From local repo (changes done) and move to Git repo:
+-----------------
+1. Create a new repo in git
+2. create a new folder in PC
+3. open the folder and open git bash
+4. git init - initialize the git
+5. create new files(touch command) or c&p existing files
+Git commands:
+6. git add .
+7. git commit -m <test file commit>
+8. git remote add origin <remote-repo-url>
+9. git push -u origin main

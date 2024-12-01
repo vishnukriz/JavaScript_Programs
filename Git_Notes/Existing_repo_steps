@@ -1,5 +1,5 @@
-****Existing repo to local repo****
-
+****From Existing git repo (where files are available) want to take to local repo and do changes****
+--------------
 Step 1: git - open the repository
 Step 2: PC - create a new folder
 Step 3: open the folder
@@ -9,7 +9,7 @@ Step 5: Git commands:
    * cd repo_name
 (files which are available in git repo will be available in the folder too)
 
-Step 6: open the folder in VS code
+Step 6: open that folder in VS code
 Step 7: make changes (new files, modify files, delete files)
 Step 8: open Terminal
 Step 9: Git commands:
