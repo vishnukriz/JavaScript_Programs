@@ -1,1 +1,17 @@
+Step 1: git - open the repository
+Step 2: PC - create a new folder
+Step 3: open the folder
+Step 4: Open git bash inside the folder
+Step 5: Git commands:
+   * git clone <remote-repo-url>
+   * cd repo_name
+(files which are available in git repo will be available in the folder too)
 
+Step 6: open the folder in VS code
+Step 7: make changes (new files, modify files, delete files)
+Step 8: open Terminal
+Step 9: Git commands:
+   * git add . - to stage all the changed files
+   * git commit -m <message> - commit the staged files with descriptive message
+   * git push  - push to git repo / the changed files in local repo, will now be visible in Git repo
+ 
