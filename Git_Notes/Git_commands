@@ -1,0 +1,15 @@
+Git commands:
+---------------
+1. git init                 =>  initialize the git
+2. git status               =>  It give the status of the tracked files and untracked files (* once, it moved to staged changes - the files will be tracked )
+3. git add                  =>  Moved to staged changes(Prepared for commit) and get tracked
+4. git config               =>  before commit, need to config email & repo_name
+                               git config user.email  "test@gmail.com"
+                               git config user.name    "ttt"
+5. git commit -m <message>  => commit with descriptive message
+6. git log                  => displayed with details (Commit id, Author, Date)
+7. git log --oneline        => commit id  with message
+8. git checkout             => switched to branch or commit id (git checkout commitID or git checkout branchName)
+9. git rm --cached filename => remove the file from staged changes
+10. git diff filename       => see the modifications done in the file 
+ 
