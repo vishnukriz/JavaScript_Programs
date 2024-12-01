@@ -1,0 +1,49 @@
+1) Delete the text and type Random in textbox
+2) Type any text and press enter in keyboard in textbox
+3) Select option4 in dropdown
+4) Unselect the check box1 and select checkbox2 and checkbox3
+5) Verify this text contain "Automation testing"
+6) Verify below number is less than 10
+7) Click on bottommost right corner on below box
+8) there is an element below. verify the element is not visible in screen
+9) Verify below element is visible and verify text to assertMyPresence by chainable command textbox(assertMyPresence)
+10) type some text in second textbox   has context menu
+11) defaultTimeout
+12) JSON
+13) cy.intercept()
+14) set env variable
+15) custom commands - read excel file
+16) cypress command - to run the script in Chrome browser and in handed mode
+17) alias
+18) access keyboard key in cypress
+19) cy.exec()
+20) cy.task()
+21) diff npx and npm
+22) execute in headless mode
+23) mock & stub
+24) cy.get() & cy.contains()
+25) cy.shadow()
+26) cross-browser testing
+27) CI/CD
+28) Assertions
+29) Run a single spec file
+30) BDD
+31) Handling child Tabs
+32) Handling alerts
+33) Events
+34) Handling asynchronous operation
+35) Cypress Folder structure
+36) Disadvantages of cypress
+37) Css Selectors (e-commerce website)
+38) Spec Pattern in config file
+39) POM
+40) How to get List of elements (using loctors)
+41) ScrollIntoView() & ScrollTo()
+42) cy.contains()
+43) Handling Dynamic webtable 
+44) How to run dynamic spec files
+45) Hooks
+46) Retries
+47) PATCH & PUT (Https Methods)
+48) POST method
+49) cy.debug() & cy.pause()
