@@ -14,3 +14,13 @@ git init - initilize the empty git repository
       Type a text
       click esc & :wq (write & quit)   => To type a text inside the file
 8) clear           => Clear the git bash 
+
+
+
+
+Git Branch:
+---------------
+1) git branch         => list out branches available
+2) git branch ttt     => create a new branch
+3) git checkout ttt   => switch to ttt branch
+4) git branch -D ttt  => Delete the branch
