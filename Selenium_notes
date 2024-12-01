@@ -168,11 +168,6 @@ It helps the user to understand the tests are passed or failed.
 
 
 other topics:
-Handling Dropdowm without select class
-Crossbrowser testing
-bug release
-multiple windows handling
-mouse and touch events
 selenium architecture/components
 Testng framework - explain
 cucumber framework - features
@@ -187,3 +182,10 @@ get all options in dropdown
 Assertions
 How do you use XPath in Selenium testing
 How do you upload a file using Selenium WebDriver
+
+TakeScreenShot**
+POM**
+BDD**
+Exception**
+dropDown Handling**
+
