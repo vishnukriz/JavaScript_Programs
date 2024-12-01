@@ -3,32 +3,32 @@
 let a=[
     {
         "name": "Employee1",
-        "Employer": "AclDigital",
+        "Employer": "xxx",
         "Experience (in yrs)": 2
     },
     {
         "name": "Employee2",
-        "Employer": "AclDigital",
+        "Employer": "xxx",
         "Experience (in yrs)": 3
     },
     {
         "name": "Employee3",
-        "Employer": "Siemens",
+        "Employer": "yyy",
         "Experience (in yrs)": 6
     },
     {
         "name": "Employee4",
-        "Employer": "Siemens",
+        "Employer": "yyy",
         "Experience (in yrs)": 3
     },
     {
         "name": "Employee5",
-        "Employer": "Siemens",
+        "Employer": "yyy",
         "Experience (in yrs)": 4
     },
     {
         "name": "Employee6",
-        "Employer": "Siemens",
+        "Employer": "yyy",
         "Experience (in yrs)": 2
     }
 ]
@@ -49,7 +49,7 @@ let a=[
 9) Print array without duplicate and sort it
 10) Sum of number in a array
 11) Prime number
-12) Function decalration & function expression
+12) Function declaration & function expression
 
 
 
