@@ -1,1 +1,189 @@
+**Selenium Questions**:
+https://www.testgorilla.com/blog/tricky-selenium-interview-questions-answers/
+https://www.geeksforgeeks.org/selenium-interview-questions/#selenium-interview-questions-for-freshers
+https://rahulshettyacademy.com/blog/index.php/selenium-webdriver-with-java-interview-questions/
 
+
+1) Manage iframe in Selenium webdriver: Iframe is an element of HTML that puts another webpage within the parent page.
+driver.switchTo().frame("ID");
+driver.switchTo().frame(0);
+driver.switchTo().frame(driver.findElements(By.tagName(“iframe”).get(0));
+driver.switchTo().defaultContent()
+
+2) Robot class is a Java-based utility class that lets the tester  automate tasks that can’t be done using Selenium’s built-in methods (mouse intractions)
+
+3) Selenium navigation commands:
+navigate().forward(); - moves to next page
+naviagte().back(); - moves to previous page
+navigate().refresh() - reload the page
+navigate().to() - opens new web page
+
+4) difference between driver.close() and driver.quit() commands:
+driver.close() - closes the current tab/window
+driver.quit() - closes all the windows
+
+5) differences between driver.findElement() and driver.findElements() :
+driver.findElement() - returns first matching element of the passed locator
+driver.findElements() - returns the list of elements that matches the locator
+
+6) POM - Page object model is a design pattern where we can create separate classes to represent each web page in the application.
+These classes encapsulates the web elements and intractions, which makes tests more readable, maintainable and reducting te dupliaction of the code.
+
+7) Difference between getText() and getAttribute() in Selenium:
+getText() - provides the visible text of the web Element
+getAttribute() - provides the value of the particular HTML attribute
+Eg: <h3 title=”HTML Attributes”> ATTRIBUTES </h3>
+In the above example, the h3 tag has an attribute with the property name as "title" and property value as "HTML Attributes".
+
+8) Handle dynamic elements that change attributes or IDs on each page load: we can use robust locators like Xpath or CSS selectors based on stable attaribute 
+or parent elements. This ensure a reliable way to locate elements even if ID or attribute changes.
+
+9) *Handling Dropdown* / multi selection in dropdown - use  selectByIndex, selectByvalue, selectByvisibleText at a time with different dropdwon options
+   ** using Select class
+ options: selectByIndex, selectByvalue, selectByvisibleText
+eg:   WebElement  testDropdown = driver.findElement(By.id("locator"));
+      Select drop = new Select(testDropdown);
+      drop.selectByinder(5);
+   ** without Select class: we can obtain using Action class, sendKeys, JavaScript Executor class.
+eg: driver.findElement(By.id("loc")).sendKeys("option name");
+
+WebElement  testDropdown1 = driver.findElement(By.id("locator")); 
+JavaScriptExecutor js = (JavaScriptExecutor) driver;
+js.executeScript("arguments[0].value='option'", testDropdown1);
+
+10)  Crossbrowser testing: is a type of non-functional testing that let us to check whether website works as intended when asscessed using different 
+    OS combination - different browsers and OS.
+
+11) Bug Release: Bug release is when the software or an application is handed over to the testing team knowing that the defect is present in a release. 
+During this, the priority and severity of bug are low, as the bug can be removed before the final handover.
+
+12) difference between getWindowHandle() and getWindowHandles():
+getWindowHandle() - returns the unique handle of the currently focused window or tab
+getWindowHandles() - returns a set of all open window handles. Used when dealing with multiple windows or tabs, allowing easy switching between them.
+set: It will set the window handles in the form of string. set<string> set= driver.getwindowhandles();
+switch to: This function is used to switch between the windows.
+action: This methods helps to do actions to windows.
+String handle = driver.getwindowHandle();
+Set<string> allhandles = driver.getwindowhandles();
+
+//iterate through each window:
+for(String handle: allhandles){
+driver.switchTo.window(handle);
+//perform actions 
+driver.getTitle();
+}
+driver.switchTo().defaultcontent();
+
+
+13) Mouse and touch events: using Action class (click, dobleclick, rightclick)
+   WebElement m = driver.findElement(By.xpath("/html/body/main/div/div/div[2]/button[1]"));
+click, dobleclick, rightclick:
+   Actions a = new Actions(driver);
+   a.moveToElement(m).click().build().perform();
+ Mouse Hover: 
+   Actions a = new Actions(driver);
+   a.clickAndHold(m).build().perform();
+
+14) How to get screenshot in selenium: public static void takeScreenShot(Webdriver webdriver, String filewithPath) {
+ Step 1: Covert webdriver obj into takeScreenshot 
+TakeScreenshot Scrshot = ((TakeScreenshot)webdriver);
+Step 2: Call getScreenshotAs to create a image file
+File ScrFile = Scrshot.getScreenshotAs(Output.FILE);
+Step 3: Move image file to new destination
+File desFile = new File(filewithPath)
+Step 4: copy file at destination
+FileUtils.copyFile(Srcfile, desFile)
+
+
+15) d/b scenario and scenario outline:
+Scenario - is used for individual, non-parameterized test cases.
+Scenario outline - is used for parameterized test cases where same steps executed multiple times with different set of input datas. Powerful feature in cucumber.
+Scenario Outline: Login test with vaild data
+Given  User navigates to Login page
+When   User enter vaild email in <Username> field
+And    User enter vaild password in <password> field
+And    User clicks login button
+Then   User navigates to HomePage
+eg:
+|Username             |password   |
+|Test@gmail.com       |1234       |
+|work@gmail.com       |12@90      |
+|user@gmail.com       |567#4      |
+
+Scenario: Login test with vaild data
+Given  User navigates to Login page
+When   User enter vaild email "test@gmail.com in email field
+And    User enter vaild password "23@fg" in password field
+And    User clicks login button
+Then   User navigates to HomePage
+
+16) Background Keyword: is used to define a step or series of steps which are common in all the test of the feature file
+eg:
+Feature: Test Background Feature
+Description: The purpose of this feature is to test the Background keyword
+
+Background: User is Logged In
+	Given   I navigate to the login page
+	When    I submit username and password
+	Then    I should be logged in 
+
+Scenario: Search a product and add the first product to the User basket
+	Given   User search for Lenovo Laptop
+	When    Add the first laptop that appears in the search result to the basket
+	Then    User basket should display with added item
+
+17) Get all options in dropdown: 
+       we can use getOptions() methods to get the list of all options in the dropdown.
+
+  WebElement dropdown = driver.findElement(By.id("test"));
+  Select drp = new Select(dropdown);
+
+ //Get all options
+  List<WebElement> dd = drp.getOptions();
+  System.out.println(dd.size());
+
+   // Loop to print one by one
+   for(let i=0;i< dd.size(); i++){
+       System.out.println(dd.get(i).getText());
+  }
+
+18) webdriver and remote driver: Selenium webDriver is a tool used to execute automated Test cases on various browsers. (used for automating the browser 
+in same machine where the code is written) 
+Selenium RemoteWebdriver implements the webdriver interface to execute the test cases (runs the test in various machine. for this we will be using Selenium Grid)
+
+  
+19) Assertions : It is a Validation or checkpoints for an application. Assertions states that the application works as expected or not. 
+It helps the user to understand the tests are passed or failed.
+2 types of Assertions:
+  Soft Assertion - Test Execution will be continued even if the assertion condition is not met.
+  Hard Assertion - Test Execution will be aborted, if the assertion condition is not met.
+  Methods:
+  assertEquals() - This will compare the 2 arguments. checks whether the Expected results equals to actual results.
+  assertNotEquals() - checks whether the Expected results not equals to actual results.
+  assertTrue() - This method verify the Boolean value is retured by the condition. The given condition is true, if it false - then test failed
+  assertFalse() - This method verify the Boolean value is retured by the condition. The given condition is false, if it true - then test failed
+  assertNull() - This method checks the expected output is null, if not - the value is false
+  assertNotNull() - This method checks the expected output is not null, if not - the value is false
+  assertAll() - to see assertion results at the end of the test
+
+
+other topics:
+Handling Dropdowm without select class
+Crossbrowser testing
+bug release
+multiple windows handling
+mouse and touch events
+selenium architecture/components
+Testng framework - explain
+cucumber framework - features
+how to get screenshot in selenium
+d/b scenario and scenario outline
+multi selection in dropdown
+fluent wait, explict wait
+webdriver and remote driver
+backgound keyword
+selenium 3 and selenium 4
+get all options in dropdown
+Assertions
+How do you use XPath in Selenium testing
+How do you upload a file using Selenium WebDriver
