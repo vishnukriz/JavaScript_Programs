@@ -50,3 +50,22 @@ Apply and save
 click Build Now
 click the builts --> console output
 
+
+
+Pipeline:
+-----------
+It provides a sequence of stages (e.g., build, test, deploy)
+
+Go to Jenkins Dashboard > New Item.
+Select Pipeline and provide a name
+
+Description
+Pipeline: select Git
+repo_url
+pipeline script - write
+
+Apply and save
+click Build Now
+click the builts --> console output
+
+
