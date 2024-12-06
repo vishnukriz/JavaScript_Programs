@@ -23,3 +23,30 @@ save and finish
 page navigate to jenkins board
 
 
+
+Plugins Installation:
+----------------------
+Manage jenkins --> Plugins (Git, Github, pipeline plugins are already installed)
+ 
+GitHub Plugin: For integrating with GitHub.
+Git Plugin: For Git repository support.
+Pipeline Plugin: For Jenkinsfile support.
+
+
+
+Freestyle Project
+----------
+Go to Jenkins Dashboard > New Item.
+Select Freestyle Project and provide a name.
+
+
+General - Description
+Source Code Management (SCM): Add your GitHub/Git repository URL.
+Poll SCM (time to run the scripts)
+
+Built steps - bash commands 
+
+Apply and save
+click Build Now
+click the builts --> console output
+
