@@ -9,3 +9,17 @@ Continuous Integration tool:
 
 
   * If we configure Github with jenkins - We only need to commit changes to the source code and Jenkins (automate the build and test for each commit - so we know what is failed and do chnages then and there)
+
+Installation of Jenkins:
+------------------------
+download jdk (17 or21) - jenkins supports only these version
+download and install jenkins
+open using url - https://localhost:8080/.
+initalpassword enter page will be displayed - password enter
+install suggested plugins --> plugins installed
+username and password setup
+port :8080
+save and finish
+page navigate to jenkins board
+
+
