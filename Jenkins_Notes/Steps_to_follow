@@ -1,1 +1,11 @@
-Jenkins is build on Java. CI/CD Tool
+Continuous Integration tool:
+
+* Jenkins is open source automation server build in Java. 
+* Helps for continuous integration and continuous delivery.
+                                                            failure    -  Repeat the build process
+  Plan --> code --> build --> Test  (CI)      ----> Release ------------> 
+               build process                                 success   -  (CD)  Deploy --> operate --> Monitor
+     <--------------------------------->
+
+
+  * If we configure Github with jenkins - We only need to commit changes to the source code and Jenkins (automate the build and test for each commit - so we know what is failed and do chnages then and there)
